@@ -1,0 +1,18 @@
+Base path: C:/Program Files/Unity/Editor/Data
+Cmd: getPlatforms
+Cmd: compileSnippet
+  api=8 type=0 insize=7239 outsize=3917 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF pd=UNITY_NO_LINEAR_COLORSPACE UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF3 ok=1
+Cmd: disassembleShader
+  api=13 insize=3917 outsize=7352 ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=7239 outsize=752 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING ok=1
+Cmd: disassembleShader
+  api=11 insize=752 outsize=1275 ok=1
+Cmd: disassembleShader
+  api=15 insize=1973 outsize=3308 ok=1
+Cmd: disassembleShader
+  api=15 insize=1973 outsize=3306 ok=1
+Cmd: compileSnippet
+  api=8 type=0 insize=4837 outsize=2849 kw=DIRECTIONAL pd=UNITY_NO_LINEAR_COLORSPACE UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF3 ok=1
+Cmd: disassembleShader
+  api=13 insize=2849 outsize=5595 ok=1

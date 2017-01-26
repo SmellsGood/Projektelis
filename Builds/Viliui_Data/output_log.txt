@@ -1,0 +1,89 @@
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 650 Ti  (ID=0x11c6)
+    Vendor:   NVIDIA
+    VRAM:     1990 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\User\Desktop\V 0.175\Builds\Viliui_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\User\Desktop\V 0.175\Builds\Viliui_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\User\Desktop\V 0.175\Builds\Viliui_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\User\Desktop\V 0.175\Builds\Viliui_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\User\Desktop\V 0.175\Builds\Viliui_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\User\Desktop\V 0.175\Builds\Viliui_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\User\Desktop\V 0.175\Builds\Viliui_Data\Managed\UnityEngine.Advertisements.dll (this message is harmless)
+Loading C:\Users\User\Desktop\V 0.175\Builds\Viliui_Data\Managed\UnityEngine.Advertisements.dll into Unity Child Domain
+Platform assembly: C:\Users\User\Desktop\V 0.175\Builds\Viliui_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\User\Desktop\V 0.175\Builds\Viliui_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\User\Desktop\V 0.175\Builds\Viliui_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\User\Desktop\V 0.175\Builds\Viliui_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\User\Desktop\V 0.175\Builds\Viliui_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\User\Desktop\V 0.175\Builds\Viliui_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\User\Desktop\V 0.175\Builds\Viliui_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.196 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\User\Desktop\V 0.175\Builds\Viliui_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 3374 -> priority: 1 
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1649)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1649)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1649)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1649)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1649)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.462488 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 503.
+Total: 0.214245 ms (FindLiveObjects: 0.021809 ms CreateObjectMapping: 0.010904 ms MarkObjects: 0.168702 ms  DeleteObjects: 0.007697 ms)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1649)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1649)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1649)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1649)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1649)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 9.121477 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 505.
+Total: 0.327141 ms (FindLiveObjects: 0.033034 ms CreateObjectMapping: 0.021167 ms MarkObjects: 0.262675 ms  DeleteObjects: 0.009301 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.788347 ms
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 389.
+Total: 0.394173 ms (FindLiveObjects: 0.032393 ms CreateObjectMapping: 0.020847 ms MarkObjects: 0.282560 ms  DeleteObjects: 0.057089 ms)
+
