@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GrappHook : MonoBehaviour
+public partial class GrappHook : MonoBehaviour
 {
     Rigidbody2D rb2d, playerPhysics;
     public float speed = 300f, pulling = 100f, jumpHeight;
@@ -12,7 +12,7 @@ public class GrappHook : MonoBehaviour
     LineRenderer line;
     Movement mScript;      
     Vector2 target;
-    public Transform linija;
+    public Transform linijosPradzia;
     public bool isHooked, isShot;
 
     // Use this for initialization
@@ -89,8 +89,8 @@ public class GrappHook : MonoBehaviour
         if (GameObject.Find("hookLook").GetComponent<SpriteRenderer>().enabled)
         {  //linijos grafikai
             line.enabled = true;
-            line.SetPosition(0, location.transform.position);
-            line.SetPosition(1, new Vector2(linija.position.x, linija.position.y));
+            line.SetPosition(0, transform.position);
+            line.SetPosition(1, new Vector2(linijosPradzia.position.x, linijosPradzia.position.y));
         } 
 
 
@@ -115,23 +115,7 @@ public class GrappHook : MonoBehaviour
                 if (hook.distance < 100 && (player.transform.position.y < gameObject.transform.position.y)) hook.distance = hook.distance + 1f;
             }
 
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) // judejimas ant zemes ir swinginimasis
-            {
-
-                if (gScript.ground) { hook.enabled = false; playerPhysics.gravityScale = 50; } //
-                else
-                {
-                    HandleSwing(); playerPhysics.gravityScale = 150f;
-                }
-            }
-            else SwingTimer -= Time.deltaTime;
-            if (SwingTimer <= 0f)
-            {
-                loopCounter = loopCounterMin;
-                loopCounterAdd = loopCounterMin;
-                SwingTimer = 1.5f;
-                momentine = swingPower;
-            }
+            SwingMovement();
 
             if (location.transform.position.y - transform.position.y > 0) hook.enabled = false; //jei zmogus auksciu uz hooka
             else if (!gScript.ground && isHooked) hook.enabled = true;         
@@ -158,31 +142,6 @@ public class GrappHook : MonoBehaviour
         }
     }
 
-    private int supimosiPuse = 0, loopCounter=15, oldSupimosiPuse, loopCounterMin=15, loopCounterMax=42, loopCounterAdd=15;
-    private float SwingTimer = 1.5f, swingPower = 3000f, momentine=3000f;
-    void HandleSwing() //supimasis
-    {
-        loopCounter--;
-        Debug.Log(loopCounter);
-     if(Input.GetKey(KeyCode.A)) {
-            supimosiPuse = -1;
-            if(loopCounter >= 1 && player.transform.position.y+10 < transform.position.y) playerPhysics.AddForce(transform.right * (-momentine)); player.transform.localScale = new Vector3(-1, 1, 1);
-        }
-     else if(Input.GetKey(KeyCode.D)) {
-            supimosiPuse = 1;
-            if (loopCounter >= 1 && player.transform.position.y+10 < transform.position.y) playerPhysics.AddForce(transform.right * momentine); player.transform.localScale = new Vector3(1, 1, 1);
-        }
-
-        if (supimosiPuse != oldSupimosiPuse)
-        {
-            if (loopCounter <= loopCounterMax)
-            {
-                if (loopCounterAdd < loopCounterMax) loopCounterAdd += 4; if(momentine<=4000f)momentine+=100f;
-            }
-                loopCounter = loopCounterAdd;
-            }                      
-    oldSupimosiPuse = supimosiPuse;
-    }
     
 }
 

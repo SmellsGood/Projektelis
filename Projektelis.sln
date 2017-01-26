@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projektelis.CSharp.Plugins", "Projektelis.CSharp.Plugins.csproj", "{875C6159-1EEE-28DD-D279-456E211306E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projektelis.CSharp", "Projektelis.CSharp.csproj", "{CDD65C82-F63E-EE71-DA0F-3A534A6FDD40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projektelis.CSharp.Editor", "Projektelis.CSharp.Editor.csproj", "{AAF82488-6D01-C4E7-5F71-3EBFD87F58B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{875C6159-1EEE-28DD-D279-456E211306E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{875C6159-1EEE-28DD-D279-456E211306E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{875C6159-1EEE-28DD-D279-456E211306E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{875C6159-1EEE-28DD-D279-456E211306E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD65C82-F63E-EE71-DA0F-3A534A6FDD40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD65C82-F63E-EE71-DA0F-3A534A6FDD40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD65C82-F63E-EE71-DA0F-3A534A6FDD40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD65C82-F63E-EE71-DA0F-3A534A6FDD40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAF82488-6D01-C4E7-5F71-3EBFD87F58B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF82488-6D01-C4E7-5F71-3EBFD87F58B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF82488-6D01-C4E7-5F71-3EBFD87F58B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF82488-6D01-C4E7-5F71-3EBFD87F58B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

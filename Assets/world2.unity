@@ -5603,8 +5603,10 @@ MonoBehaviour:
   speed: 250
   pulling: 200
   jumpHeight: 130
+  linijosPradzia: {fileID: 139064624}
   isHooked: 0
   isShot: 0
+  momentine: 3000
 --- !u!212 &1817760503
 SpriteRenderer:
   m_ObjectHideFlags: 0
