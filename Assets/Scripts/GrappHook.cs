@@ -137,7 +137,7 @@ public partial class GrappHook : MonoBehaviour
             Quaternion goodOne = transform.rotation; //kad galetu normaliai suptis ant hooko
             transform.rotation = Quaternion.Euler(0, 0, 0);
             GameObject.Find("hookLook").transform.rotation = goodOne; // end
-            loopCounter = loopCounterMax*2/3;
+            loopCounter = loopCounterAddMax*2/3;
             momentine = swingPower;
         }
     }

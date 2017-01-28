@@ -314,6 +314,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: Ground
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: LShift
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 110237192}
   m_Solo: 0
@@ -1108,7 +1111,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a94747773f6e93f41ac775846b88c612, type: 2}
+  m_Motion: {fileID: 7400000, guid: f23203473b8334b43a5fe7ba61508336, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
