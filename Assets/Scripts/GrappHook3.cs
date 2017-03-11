@@ -15,7 +15,6 @@ public partial class GrappHook {
             springTimerAtm = springTimer;
             GameObject.Find("hookLook").GetComponent<SpriteRenderer>().enabled = false;
             playerPhysics.gravityScale = 50;
-            mScript.graplinghook = false;
         }
     }
 
@@ -36,7 +35,6 @@ public partial class GrappHook {
     {
         {   // suranda peles koord., atema is ju zaidejo vieta ir taip suranda sovimo trajektorija.
             GameObject.Find("hookLook").GetComponent<SpriteRenderer>().enabled = true;
-            playerPhysics.gravityScale = 20;
             try { gameObject.AddComponent<Rigidbody2D>(); } catch { };
             hook.enabled = false;
             isHooked = false;
@@ -66,11 +64,10 @@ public partial class GrappHook {
             pasikeiteDistance();
         }
         else
-        {
-            hook.distance = Vector2.Distance(gameObject.transform.position, location.transform.position);
-            float gap = gameObject.transform.position.y - location.transform.position.y;
+        {                
+           float gap = gameObject.transform.position.y - location.transform.position.y;
             if (hook.distance < 100 && (player.transform.position.y < gameObject.transform.position.y)) hook.distance = hook.distance + 1f;
-            pasikeiteDistance();
-        }
+           pasikeiteDistance();
+       }
     }
 }

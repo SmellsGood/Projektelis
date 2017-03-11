@@ -4,7 +4,7 @@ using System.Collections;
 public partial class GrappHook : MonoBehaviour
 {
     Rigidbody2D rb2d, playerPhysics;
-    public float speed = 800f, pulling = 100f, jumpHeight;
+    public float speed = 300f, pulling = 100f, jumpHeight;
     private float delay = 0.3f, timer = 0.3f;
     GameObject location, player, groundDet;
     DistanceJoint2D hook;
@@ -14,7 +14,7 @@ public partial class GrappHook : MonoBehaviour
     Movement mScript;      
     Vector2 target;
     public Transform linijosPradzia;
-    public bool isHooked, isShot, pasiHookino,hookbool;
+    public bool isHooked, isShot, pasiHookino;
 
     // Use this for initialization
     void Start()
@@ -51,12 +51,11 @@ public partial class GrappHook : MonoBehaviour
         if (GameObject.Find("hookLook").GetComponent<SpriteRenderer>().enabled)
         {  //linijos grafikai
             line.enabled = true;
-            mScript.graplinghook = true;
             line.SetPosition(0, transform.position);
             line.SetPosition(1, new Vector2(linijosPradzia.position.x, linijosPradzia.position.y));
-        } 
+        }
 
-
+        getHighestPoint();
     }
 
     void FixedUpdate()
@@ -79,20 +78,23 @@ public partial class GrappHook : MonoBehaviour
         if (col.gameObject.tag == "ground" || col.gameObject.tag == "softGround")
         {
             Destroy(gameObject.GetComponent<Rigidbody2D>());
-            // hook.enabled = true;
+           // hook.enabled = true;
             hook.connectedAnchor = gameObject.transform.position;                  
             spring.connectedAnchor = gameObject.transform.position; spring.enabled = true; springOff = false; pasiHookino = true ;  //0.1 tamping 2.5 frequency       
            // isHooked = true;
             pasikeiteDistance(); // normaliam supimuisi
-            playerPhysics.gravityScale = 300;
+            playerPhysics.gravityScale = 150; 
             float distance = Vector2.Distance(gameObject.transform.position, location.transform.position); 
             spring.distance = distance;       
             isShot = false; //pataike, tai ijungia ifa update
             Quaternion goodOne = transform.rotation; //kad galetu normaliai suptis ant hooko
             transform.rotation = Quaternion.Euler(0, 0, 0);
             GameObject.Find("hookLook").transform.rotation = goodOne; // end
-            loopCounter = loopCounterAddMax*2/3;
+            loopCounter = loopCounterMax*2/3;
             momentine = swingPower;
+            oldPosX = player.transform.position.x; oldPosY = player.transform.position.y;
+            loopCounter = loopCounterMax;
+            RastKampa();
         }
     }
 

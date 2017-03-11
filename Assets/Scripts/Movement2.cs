@@ -8,14 +8,7 @@ public partial class Movement {
     void FixedUpdate()
     {
 
-        if (lScript.liftup && !walled2)
-        {
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
-            {
-                dude.velocity = new Vector2(-dude.velocity.x, dude.velocity.y);
-                dude.AddForce(transform.up * liftupSpeed);
-            }
-        }
+
 
         liftUp();
         fallDamage();
